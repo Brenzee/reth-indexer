@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - mainnet_data:/root/.local/share/reth/mainnet
+      - mainnet_data:/root/.local/share/reth/mainnet:ro
 
 volumes:
   mainnet_data:
